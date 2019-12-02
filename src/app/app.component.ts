@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faSignInAlt, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faCalendar } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lms';
+  navbarCollapsed = true;
+  faSignInAlt = faSignInAlt;
+  faUser = faUser;
+  faCalendar = faCalendar;
+  faClock = faClock;
+
+  toggleNavbarCollapsing() {
+    this.navbarCollapsed = !this.navbarCollapsed;
+  }
 }
