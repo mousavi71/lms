@@ -1,42 +1,57 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light rtl">
-  <img class="img-logo" src="assets/lms.png" alt="lms">
-<!--  <a class="navbar-brand" href="#">صفحه اصلی </a>-->
-  <button type="button" class="btn btn-outline-secondary">صفحه اصلی </button>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleNavbarCollapsing()" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<div class="container p-0">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light rtl">
+    <img class="img-logo pr-3" src="assets/lms.png" alt="lms">
+    <!--  <a class="navbar-brand" href="#">صفحه اصلی </a>-->
+    <button type="button" class="btn btn-outline-secondary">صفحه اصلی</button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleNavbarCollapsing()"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent" [class.collapse]="navbarCollapsed">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">پاسخنامه</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">خبرنامه <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">درباره ما </a>
-      </li>
-    </ul>
-    <button class="btn" type="submit"><fa-icon class="p-1" [icon]="faSignInAlt"></fa-icon>ورود </button>
-    <button class="btn" type="submit"><fa-icon class="p-1" [icon]="faUser"></fa-icon>ثبت نام </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [class.collapse]="navbarCollapsed">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">پاسخنامه</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">خبرنامه <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">درباره ما </a>
+        </li>
+      </ul>
+      <button class="btn" type="submit">
+        <fa-icon class="p-1" [icon]="faSignInAlt"></fa-icon>
+        ورود
+      </button>
+      <button class="btn" type="submit">
+        <fa-icon class="p-1" [icon]="faUser"></fa-icon>
+        ثبت نام
+      </button>
 
-  </div>
-</nav>
-<div class="album py-5 bg-light">
-  <div class="container-fluid">
-
-    <div class="row courses">
-      <div class="col-md-4 px-5 mt-5">
+    </div>
+  </nav>
+</div>
+<div class="album bg-light">
+  <div class="container">
+    <div class="row courses d-flex justify-content-around">
+      <div class="col-md-4 each-card col-lg-4 col-xl-3 mt-5">
         <div class="card mt-5 mb-4 box-shadow">
           <div class="px-2 pt-2">
             <img class="w-100" src="assets/network1.jpg" alt="network">
           </div>
           <div class="card-body p-0">
-            <div class="card-text m-4 rtl">
+            <div class="card-text m-2 rtl">
               <p>ثبت نام دوره شبکه</p>
-              <p><fa-icon class="p-1" [icon]="faCalendar"></fa-icon>تاریخ شروع :۱۳/۱۲/۷۱</p>
-              <p> <fa-icon class="p-1" [icon]="faClock"></fa-icon>ساعت:۹ الی ۱۲ </p>
+              <p>
+                <fa-icon class="p-1" [icon]="faCalendar"></fa-icon>
+                تاریخ شروع :۱۳/۱۲/۷۱
+              </p>
+              <p>
+                <fa-icon class="p-1" [icon]="faClock"></fa-icon>
+                ساعت:۹ الی ۱۲
+              </p>
             </div>
             <div class="d-flex justify-content-between align-items-center col-5 p-0">
               <button type="button" class="btn btn-sm register-button btn-warning btn-block">ثبت نام</button>
@@ -45,16 +60,22 @@
         </div>
       </div>
 
-      <div class="col-md-4 px-5">
+      <div class="col-md-4 each-card col-lg-4 col-xl-3 pt-3">
         <div class="card mb-4 box-shadow">
           <div class="px-2 pt-2">
             <img class="w-100" src="assets/network1.jpg" alt="network">
           </div>
           <div class="card-body p-0">
-            <div class="card-text m-4 rtl">
+            <div class="card-text m-2 rtl">
               <p>ثبت نام دوره شبکه</p>
-              <p><fa-icon class="p-1" [icon]="faCalendar"></fa-icon>تاریخ شروع :۱۳/۱۲/۷۱</p>
-              <p> <fa-icon class="p-1" [icon]="faClock"></fa-icon>ساعت:۹ الی ۱۲ </p>
+              <p>
+                <fa-icon class="p-1" [icon]="faCalendar"></fa-icon>
+                تاریخ شروع :۱۳/۱۲/۷۱
+              </p>
+              <p>
+                <fa-icon class="p-1" [icon]="faClock"></fa-icon>
+                ساعت:۹ الی ۱۲
+              </p>
             </div>
             <div class="d-flex justify-content-between align-items-center col-5 p-0">
               <button type="button" class="btn btn-sm register-button btn-warning btn-block">ثبت نام</button>
@@ -63,16 +84,22 @@
         </div>
       </div>
 
-      <div class="col-md-4 px-5 mt-5">
+      <div class="col-md-4 each-card col-lg-4 col-xl-3 mt-5">
         <div class="card mt-5 mb-4 box-shadow">
           <div class="px-2 pt-2">
             <img class="w-100" src="assets/network1.jpg" alt="network">
           </div>
           <div class="card-body p-0">
-            <div class="card-text m-4 rtl">
+            <div class="card-text m-2 rtl">
               <p>ثبت نام دوره شبکه</p>
-              <p><fa-icon class="p-1" [icon]="faCalendar"></fa-icon>تاریخ شروع :۱۳/۱۲/۷۱</p>
-              <p> <fa-icon class="p-1" [icon]="faClock"></fa-icon>ساعت:۹ الی ۱۲ </p>
+              <p>
+                <fa-icon class="p-1" [icon]="faCalendar"></fa-icon>
+                تاریخ شروع :۱۳/۱۲/۷۱
+              </p>
+              <p>
+                <fa-icon class="p-1" [icon]="faClock"></fa-icon>
+                ساعت:۹ الی ۱۲
+              </p>
             </div>
             <div class="d-flex justify-content-between align-items-center col-5 p-0">
               <button type="button" class="btn btn-sm register-button btn-warning btn-block">ثبت نام</button>
@@ -85,6 +112,34 @@
   </div>
 </div>
 
+<div class="container">
+  <div class="row py-2 d-flex justify-content-around">
+    <div [ngClass]="{'hover': hover==true && index == 1}"
+         (mouseover)="hover=true; index = 1"
+         (mouseout)="hover=false"
+         class="circle-icons seminar">
+      <span> برگزاری سمینارها </span>
+    </div>
+    <div [ngClass]="{'hover': hover==true && index == 2}"
+         (mouseover)="hover=true; index = 2"
+         (mouseout)="hover=false"
+         class="circle-icons paint">
+      <span> دروس هنری </span>
+    </div>
+    <div [ngClass]="{'hover': hover==true && index == 3}"
+         (mouseover)="hover=true; index = 3"
+         (mouseout)="hover=false"
+         class="circle-icons simulation">
+      <span> دروس شبیه سازی </span>
+    </div>
+    <div [ngClass]="{'hover': hover==true && index == 4}"
+         (mouseover)="hover=true; index = 4"
+         (mouseout)="hover=false"
+         class="circle-icons tube">
+      <span> دروس آزمایشگاهی </span>
+    </div>
+  </div>
+</div>
 
 
 <router-outlet></router-outlet>

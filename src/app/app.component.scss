@@ -11,3 +11,68 @@
   background-color: #e9e9ec;
   //padding: 40px 280px 20px 280px;
 }
+
+//@media only screen and (min-width: 1600px) {
+//  .each-card {
+//    padding-right: 3.5rem;
+//    padding-left: 3.5rem;
+//  }
+//}
+//
+//@media only screen and (max-width: 1000px) {
+//  .each-card {
+//    padding-right: .25rem;
+//    padding-left: .25rem;
+//  }
+//}
+//
+//@media only screen and (max-width: 1000px) {
+//  .each-card {
+//    padding-right: .25rem;
+//    padding-left: .25rem;
+//  }
+//}
+.circle-icons {
+  cursor: pointer;
+  //img {
+  //  height: 100%;
+  //  //display: block;
+  //  //margin: auto;
+  //  display: flex;
+  //  justify-content: center;
+  //}
+  span {
+    display: table;
+    margin: auto auto;
+    position: relative;
+    /* bottom: 100%; */
+    top: 110%;
+  }
+  //width: auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+}
+.seminar {
+  background: url(../assets/marketing-seminar.svg) no-repeat center center;
+  background-color: #b8e8ff;
+  background-size:50%;
+}
+.paint {
+  background: url(../assets/paint-palette-and-brush.svg) no-repeat center center;
+  background-color: #b8e8ff;
+  background-size:50%;
+}
+.simulation {
+  background: url(../assets/test-tube.svg) no-repeat center center;
+  background-color: #b8e8ff;
+  background-size:50%;
+}
+.tube {
+  background: url(../assets/simulation.svg) no-repeat center center;
+  background-color: #b8e8ff;
+  background-size:50%;
+}
+.hover {
+  background-color: cornflowerblue !important;
+}

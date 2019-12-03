@@ -14,6 +14,8 @@ export class AppComponent {
   faUser = faUser;
   faCalendar = faCalendar;
   faClock = faClock;
+  hover: boolean;
+  index: number;
 
   toggleNavbarCollapsing() {
     this.navbarCollapsed = !this.navbarCollapsed;
