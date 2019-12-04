@@ -1,5 +1,5 @@
 .active-star {
-  color: #f37b00;
+  color: #ece82d;
 }
 .stars {
   fa-icon{
@@ -11,10 +11,32 @@
     border-radius: 50%;
     padding: 2px;
     visibility: hidden;
+    position: relative;
+    left: 5px;
   }
+  //&:hover span{
+  //  .visible-rating {
+  //    visibility: visible;
+  //  }
+  //}
 }
 .visible-rating {
-  &:hover span{
+  visibility: hidden;
+}
+.rating-container:hover {
+  .visible-rating {
     visibility: visible;
   }
 }
+.each-card {
+  img {
+    //border: 8px solid white;
+  }
+  background-color: #f0f0;
+  border: 6px solid white;
+}
+//.visible-rating {
+//  &:hover span{
+//    visibility: visible;
+//  }
+//}

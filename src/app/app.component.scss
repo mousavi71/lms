@@ -83,5 +83,10 @@
     linear-gradient(0deg, #7cc7ed, #7cc7ed) no-repeat center;
   padding-bottom: 9em;
   padding-top: 10em;
-  background-size: 196% 13em, 274% calc(56% - 7em);
+  background-size: 196% 14em, 274% calc(56% - 7em);
+}
+@media only screen and (max-width: 768px) {
+  .courses-rating {
+    background-color: #7cc7ed;
+  }
 }

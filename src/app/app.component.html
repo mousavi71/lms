@@ -118,25 +118,25 @@
          (mouseover)="hover=true; index = 1"
          (mouseout)="hover=false"
          class="circle-icons seminar">
-      <span> برگزاری سمینارها </span>
+      <span style="color: #0A63DE"> برگزاری سمینارها </span>
     </div>
     <div [ngClass]="{'hover': hover==true && index == 2}"
          (mouseover)="hover=true; index = 2"
          (mouseout)="hover=false"
          class="circle-icons paint">
-      <span> دروس هنری </span>
+      <span style="color: #0A63DE"> دروس هنری </span>
     </div>
     <div [ngClass]="{'hover': hover==true && index == 3}"
          (mouseover)="hover=true; index = 3"
          (mouseout)="hover=false"
          class="circle-icons simulation">
-      <span> دروس شبیه سازی </span>
+      <span style="color: #0A63DE"> دروس شبیه سازی </span>
     </div>
     <div [ngClass]="{'hover': hover==true && index == 4}"
          (mouseover)="hover=true; index = 4"
          (mouseout)="hover=false"
          class="circle-icons tube">
-      <span> دروس آزمایشگاهی </span>
+      <span style="color: #0A63DE"> دروس آزمایشگاهی </span>
     </div>
   </div>
 </div>
@@ -144,42 +144,24 @@
 <div style="margin-bottom: 200px;" class="album bg-light">
   <div class="container">
     <div class="row courses-rating d-flex justify-content-around">
-      <div class="col-md-4 each-card col-lg-4 col-xl-3 pt-3">
-        <div class="card mb-4 box-shadow">
-          <div class="px-2 pt-2">
-            <img class="w-100" src="assets/network1.jpg" alt="network">
-          </div>
-          <div class="card-body p-0">
-            <div class="card-text m-2 rtl">
-              <p>ثبت نام دوره شبکه</p>
-            </div>
-            <div class="d-flex justify-content-between align-items-center col-5 p-0">
-              <button type="button" class="btn btn-sm register-button btn-warning btn-block">ثبت نام</button>
-            </div>
-          </div>
-        </div>
+      <div class="col-12 text-center">
+        <button type="button"
+                style="border-width:0.25em !important;"
+                class="btn btn-outline-light">
+          دوره های برگزار شده
+        </button>
       </div>
-
-      <div class="col-md-4 each-card col-lg-4 col-xl-3 pt-3">
-        <div class="card mb-4 box-shadow">
-          <div class="px-2 pt-2">
-            <img class="w-100" src="assets/network1.jpg" alt="network">
-          </div>
-          <div class="card-body p-0">
-            <div class="card-text m-2 rtl">
-              <p>ثبت نام دوره شبکه</p>
-            </div>
-            <div class="d-flex justify-content-between align-items-center col-5 p-0">
-              <button type="button" class="btn btn-sm register-button btn-warning btn-block">ثبت نام</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <app-rating class="col-md-4 each-card col-lg-4 col-xl-3 pt-3"
                   [rating]="5"
-                  label="ثبت نام دوره بورس">
-
+                  label="دوره شبکه">
+      </app-rating>
+      <app-rating class="col-md-4 each-card col-lg-4 col-xl-3 pt-3"
+                  [rating]="4"
+                  label="دوره بورس">
+      </app-rating>
+      <app-rating class="col-md-4 each-card col-lg-4 col-xl-3 pt-3"
+                  [rating]="2"
+                  label="دوره بورس">
       </app-rating>
     </div>
   </div>
