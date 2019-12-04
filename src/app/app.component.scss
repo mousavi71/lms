@@ -74,5 +74,14 @@
   background-size:50%;
 }
 .hover {
-  background-color: cornflowerblue !important;
+  background-color: #7cc7ed !important;
+}
+.courses-rating {
+  background:
+    linear-gradient(to bottom right, #7cc7ed 50%, transparent 50.5%) no-repeat bottom,
+    linear-gradient(to top left, #7cc7ed 50%, transparent 50.5%) no-repeat top,
+    linear-gradient(0deg, #7cc7ed, #7cc7ed) no-repeat center;
+  padding-bottom: 9em;
+  padding-top: 10em;
+  background-size: 196% 13em, 274% calc(56% - 7em);
 }

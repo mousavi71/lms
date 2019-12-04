@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faSignInAlt, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faSignInAlt, faUser, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faClock, faCalendar } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
@@ -14,6 +14,7 @@ export class AppComponent {
   faUser = faUser;
   faCalendar = faCalendar;
   faClock = faClock;
+  faStar = faStar;
   hover: boolean;
   index: number;
 

@@ -1,0 +1,20 @@
+.active-star {
+  color: #f37b00;
+}
+.stars {
+  fa-icon{
+    cursor: pointer;
+  }
+  span {
+    background-color: coral;
+    color: black;
+    border-radius: 50%;
+    padding: 2px;
+    visibility: hidden;
+  }
+}
+.visible-rating {
+  &:hover span{
+    visibility: visible;
+  }
+}
