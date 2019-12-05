@@ -1,0 +1,21 @@
+<div class="card mt-{{mt}} mb-4 box-shadow">
+  <div class="px-2 pt-2">
+    <img class="w-100" src="assets/network1.jpg" alt="network">
+  </div>
+  <div class="card-body p-0">
+    <div class="card-text m-2 rtl">
+      <p>{{label}}</p>
+      <p>
+        <fa-icon class="p-1" [icon]="faCalendar"></fa-icon>
+        تاریخ شروع :{{date}}
+      </p>
+      <p>
+        <fa-icon class="p-1" [icon]="faClock"></fa-icon>
+        ساعت:{{time}}
+      </p>
+    </div>
+    <div class="d-flex justify-content-between align-items-center col-5 p-0">
+      <button type="button" class="btn btn-sm register-button btn-warning btn-block">ثبت نام</button>
+    </div>
+  </div>
+</div>

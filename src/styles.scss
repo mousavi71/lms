@@ -1,3 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css";
 @import "../node_modules/bootstrap-v4-rtl/dist/css/bootstrap.min.css";
+@font-face {
+  font-family: yekan;
+  src: url('assets/fonts/yekan.eot');
+  src: url('assets/fonts/yekan.eot?#iefix') format('FontName-opentype'),
+  url('assets/fonts/yekan.woff') format('woff'),
+  url('assets/fonts/yekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'yekan', 'arial', sans-serif;
+}

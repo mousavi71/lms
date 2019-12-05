@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { faSignInAlt, faUser, faStar } from '@fortawesome/free-solid-svg-icons';
-import { faClock, faCalendar } from '@fortawesome/free-regular-svg-icons';
+import { faSignInAlt, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +8,10 @@ import { faClock, faCalendar } from '@fortawesome/free-regular-svg-icons';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'lms';
   navbarCollapsed = true;
   faSignInAlt = faSignInAlt;
   faUser = faUser;
   faCalendar = faCalendar;
-  faClock = faClock;
-  faStar = faStar;
   hover: boolean;
   index: number;
 

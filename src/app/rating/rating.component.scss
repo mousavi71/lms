@@ -9,16 +9,11 @@
     background-color: coral;
     color: black;
     border-radius: 50%;
-    padding: 2px;
+    padding: 0 5px;
     visibility: hidden;
     position: relative;
     left: 5px;
   }
-  //&:hover span{
-  //  .visible-rating {
-  //    visibility: visible;
-  //  }
-  //}
 }
 .visible-rating {
   visibility: hidden;
@@ -35,8 +30,3 @@
   background-color: #f0f0;
   border: 6px solid white;
 }
-//.visible-rating {
-//  &:hover span{
-//    visibility: visible;
-//  }
-//}

@@ -10,27 +10,27 @@
       <div class="d-flex rating-container justify-content-between align-items-center col-5 p-0">
         <div class="stars">
           <span [ngClass]="{'visible-rating': rating == 1}">{{rating}}</span>
-          <fa-icon class="p-1" [ngClass]="{'active-star': rating > 0}" [icon]="faStar"></fa-icon>
+          <fa-icon class="p-1" [ngClass]="{'active-star': rating > 0}" [icon]="faStar" (click)="rating = 1"></fa-icon>
         </div>
         <div class="stars">
           <span [ngClass]="{'visible-rating': rating == 2}">{{rating}}</span>
-          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 1}" [icon]="faStar"></fa-icon>
+          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 1}" [icon]="faStar" (click)="rating = 2"></fa-icon>
         </div>
         <div class="stars">
           <span [ngClass]="{'visible-rating': rating == 3}">{{rating}}</span>
-          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 2}" [icon]="faStar"></fa-icon>
+          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 2}" [icon]="faStar" (click)="rating = 3"></fa-icon>
         </div>
         <div class="stars">
           <span [ngClass]="{'visible-rating': rating == 4}">{{rating}}</span>
-          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 3}" [icon]="faStar"></fa-icon>
+          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 3}" [icon]="faStar" (click)="rating = 4"></fa-icon>
         </div>
         <div class="stars">
           <span [ngClass]="{'visible-rating': rating == 5}">{{rating}}</span>
-          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 4}" [icon]="faStar"></fa-icon>
+          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 4}" [icon]="faStar" (click)="rating = 5"></fa-icon>
         </div>
         <div class="stars">
           <span [ngClass]="{'visible-rating': rating == 6}">{{rating}}</span>
-          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 5}" [icon]="faStar"></fa-icon>
+          <fa-icon class="p-1 stars" [ngClass]="{'active-star': rating > 5}" [icon]="faStar" (click)="rating = 6"></fa-icon>
         </div>
       </div>
       <div class="col-5 pt-4 pr-0 text-center text-white">امتیاز دهی</div>
